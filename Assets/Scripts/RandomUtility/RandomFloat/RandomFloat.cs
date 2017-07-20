@@ -11,17 +11,19 @@ namespace RandomUtility
 
         [SerializeField, HideInInspector]
         float currentValue = 0.0f;
-        bool valueIsSet = false;
+
+        [SerializeField, HideInInspector]
+        bool isInitialized = false;
 
         public float GetValue()
         {
-            return valueIsSet ? currentValue : GetNewRandom();
+            return isInitialized ? currentValue : GetNewRandom();
         }
 
         public float GetNewRandom()
         {
             currentValue = Random.Range(minValue, maxValue);
-            valueIsSet = true;
+            isInitialized = true;
             return currentValue;
         }
 
@@ -32,7 +34,7 @@ namespace RandomUtility
 
         public override string ToString()
         {
-            if(valueIsSet)
+            if(isInitialized)
             {
                 return currentValue.ToString();
             }

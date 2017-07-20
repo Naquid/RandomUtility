@@ -44,6 +44,7 @@ namespace RandomUtility
         [SerializeField, HideInInspector]
         float currentValue = 0.0f;
 
+        [SerializeField, HideInInspector]
         bool isInitialized = false;
 
         public float Value
