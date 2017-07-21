@@ -21,31 +21,31 @@ namespace RandomUtility
     }
 
     [System.Serializable]
-    public struct RandomFloatDistribution
+    public class RandomFloatDistribution
     {
-        public DistributionMode mode;
+        public DistributionMode mode = DistributionMode.Curve;
 
         [SerializeField]
-        float minValue;
+        float minValue = 0.0f;
         [SerializeField]
-        float maxValue;
+        float maxValue = 0.0f;
 
-        public AnimationCurve curve;
-        public float exp;
-        public float slope;
-        public float stdDev;
-        public float mean;
+        public AnimationCurve curve = null;
+        public float exp = 0.0f;
+        public float slope = 0.0f;
+        public float stdDev = 0.1f;
+        public float mean = 0.5f;
 
         [SerializeField]
         ProbabilityValue[] probabilityList; //Cache values from list so don't allow to directly change it
-        float totalProbability;
-        bool totalProbabilityIsSet;
+        float totalProbability = 0.0f;
+        bool totalProbabilityIsSet = false;
 
         [SerializeField, HideInInspector]
-        float currentValue;
+        float currentValue = 0.0f;
 
         [SerializeField, HideInInspector]
-        bool isInitialized;
+        bool isInitialized = false;
 
         public float Value
         {

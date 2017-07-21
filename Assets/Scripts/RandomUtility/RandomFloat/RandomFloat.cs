@@ -4,16 +4,16 @@ namespace RandomUtility
 {
 
     [System.Serializable]
-    public struct RandomFloat
+    public class RandomFloat
     {
-        public float minValue;
-        public float maxValue;
+        public float minValue = 0.0f;
+        public float maxValue = 0.0f;
 
         [SerializeField, HideInInspector]
-        float currentValue;
+        float currentValue = 0.0f;
 
         [SerializeField, HideInInspector]
-        bool isInitialized;
+        bool isInitialized = false;
 
         public float GetValue()
         {
