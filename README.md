@@ -19,7 +19,7 @@ Ex.
 --RandomFloat Range Attribute--
 Can be applied to RandomFloat to give a nice slider with max/min values in the inspector.
 ```ruby
-    [RandomFloatRange(0.0f, 5.0f)]
+    [RandomFloatRange(-10.0f, 10.0f)]
     using RandomUtility;
 
     public RandomFloat randomSpeed;
