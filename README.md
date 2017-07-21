@@ -25,7 +25,7 @@ Can be applied to RandomFloat to give a nice slider with max/min values in the i
     public RandomFloat randomSpeed;
 ```
 
-   ![Alt Text](https://github.com/Naquid/RandomUtility/tree/master/Readme/RandomFloatRange.png)
+   ![Alt Text](https://raw.githubusercontent.com/Naquid/RandomUtility/master/Readme/RandomFloatRange.png)
    
 --RandomFloatDistribution--
 Same as RandomFloat with support for controlling the random distribution using a few different methods.
@@ -33,24 +33,24 @@ Same as RandomFloat with support for controlling the random distribution using a
   1. Normal
     Bell shaped distribution with control over mean and stdDev
   
-   ![Alt Text](https://github.com/Naquid/RandomUtility/tree/master/Readme/normal.png)
+   ![Alt Text](https://raw.githubusercontent.com/Naquid/RandomUtility/master/Readme/normal.png)
     
   2. Slope
    Created a linear slope
   
-   ![Alt Text](https://github.com/Naquid/RandomUtility/tree/master/Readme/slope.png)
+   ![Alt Text](https://raw.githubusercontent.com/Naquid/RandomUtility/master/Readme/slope.png)
    
   3. Curve
     Using a custom probability curve
   
-   ![Alt Text](https://github.com/Naquid/RandomUtility/tree/master/Readme/Curve.png)
+   ![Alt Text](https://raw.githubusercontent.com/Naquid/RandomUtility/master/Readme/Curve.png)
     
   4. Exp
      Exponential curve
       
-   ![Alt Text](https://github.com/Naquid/RandomUtility/tree/master/Readme/Exp.png)
+   ![Alt Text](https://raw.githubusercontent.com/Naquid/RandomUtility/master/Readme/Exp.png)
     
   5. List
     Use a list with predefined values and assign relative probabilities for them to get randomized
   
-   ![Alt Text](https://github.com/Naquid/RandomUtility/tree/master/Readme/List.png)
+   ![Alt Text](https://raw.githubusercontent.com/Naquid/RandomUtility/master/Readme/List.png)
